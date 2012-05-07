@@ -1,0 +1,191 @@
+/*   
+Theme Name: The Simplist
+Theme URI: http://terrychay.com/wordpress-themes/thesimplist
+Description: This is a new theme for Marie’s blog. I’ll list the following influences: 1) TwentyTen/Kirby: the parent theme (future WordPress default); 2) Esther 2.0: soft look; 3) Orchid Beauty (CSS Zen Garden): Marie wnted a purple accent color
+Author: terry chay
+Author URI: http://terrychay.com/
+Template: twentyeleven
+Version: 0.2
+Tags: black, blue, white, two-columns, fixed-width, custom-header, theme-options threaded-comments, sticky-post, translation-ready, microformats
+*/
+
+@import url('../twentyeleven/style.css');
+@import url('../twentyeleven/layouts/2c-r.css');
+
+/* override fonts {{{ */
+body, input, textarea, #site-title a, #access .menu, .page-title, .page-title span, .entry-title, .entry-meta, .entry-content label, .entry-content tr th, .entry-content thead th, .entry-utility, .wp-caption, .gallery-caption, .navigation, .comment-meta, .reply, #cancel-comment-reply-link, #form-section label, #form-allowed-tags, .widget-title
+{
+	font-family: Perpetua, Optima,"Gill Sans",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#site-title a, .entry-title {
+	font-family: Snell Roundhand, angelina,"Bradley Hand","Snell Roundhand","Brush Script","Tekton Pro",sans-serif;
+	xfont-family: janeaust,"JaneAusten","Bradley Hand","Snell Roundhand","Brush Script","Tekton Pro",sans-serif;
+}
+/* }}} */
+/* remove ugly colors {{{ */
+body {
+	xbackground: #FFFFFF url(../esther/images/bg.jpg) repeat-x scroll 0 0;
+	background: #FFFFFF scroll 0 0;
+}
+a:link, a:visited, .widget-area a:link, .widget-area a:visited {
+	/* color: #297B94; /* from zen habits */
+	color: #6D2542; /* fuscia from orchid beauty */
+	text-decoration: none;
+}
+#header {
+background: transparent;
+}
+/* }}} */
+/* move things around :-) {{{ */
+#header {
+	position: absolute;
+	padding: 10px 0 0 160px;
+}
+#header #masthead {
+}
+#header #masthead #branding {
+}
+#header #masthead #branding #access {
+}
+#main {
+}
+#main #container {
+	margin: 200px -240px 0 0;
+}
+#main #primary {
+}
+#footer {
+}
+/* }}} */
+/* branding {{{ */
+#branding {
+/* height: 299px; */
+}
+#site-title {
+float: none;
+padding-top: 70px;
+margin: 0;
+}
+#site-title a {
+color: #777;
+	font-size: 4em;
+xfont-family: Georgia,'Lucida Grande',Verdana,Arial,Sans-Serif;
+xfont-family: Zapfino;
+font-weight: normal;
+xfont-size: 4em;
+}
+#site-description {
+clear: none;
+float: none;
+margin: 8px 0 18px;
+width: auto;
+color: #297B94;
+color: #6D2542;
+letter-spacing: .2em;
+font-size: 1.2em;
+font-style: normal;
+font-variant: small-caps;
+font-weight: bold;
+}
+#branding>img {
+display: none;
+}
+/* }}} */
+/* access menu (off for now) {{{ */
+#access {
+	background: transparent;
+}
+#access .menu {
+	display: none;
+	background: transparent;
+}
+#access .menu  a {
+	color: #000;
+}
+#access .menu  a:hover {
+	color: #f33;
+}
+/* }}} */
+/* sidebar {{{ */
+/* about me {{{ */
+#sidebar_aboutme {
+	padding: 30px 0 0 0;
+}
+#sidebar_aboutme .mephoto {
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-transform: rotate(10deg);
+	-webkit-transition: -webkit-transform .15s linear;
+	-moz-transform: rotate(10deg);
+	font-family: "Marker felt", sans-serif;
+	font-size: 1.2em;
+	margin: 0 0 27px 30px;
+	padding: 10px 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+}
+#sidebar_aboutme .mephoto img {
+	width: 145px;
+	height: 233px;
+}
+#sidebar_aboutme .mephoto:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+	position: relative;
+	z-index: 5;
+}
+/* }}} */
+/* find me {{{ */
+.widget-area ul ul#findme {
+	color: #aaa;
+	font-size: 0.7em;
+	padding: 2.2em 0;
+	margin: 0;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+ul#findme li {
+	font-size: 1.3em;
+	line-height: 1.833em;
+}
+ul#findme a:link,ul#findme a:visited {
+	border-bottom: 1px solid #6D2542;
+	color: #6D2542;
+	font-variant: small-caps;
+}
+/* }}} */
+/* }}} */
+
+#footer {
+	background: transparent;
+	border-top: 0;
+}
+#colophon {
+	border-top: 1px solid #e7e7e7;
+}
+#site-generator a {
+	position: relative;
+	display: inline;
+	height: auto;
+	left: 0;
+	background: 0;
+	text-indent: 0;
+	text-decoration: none;
+}
+.entry-title {
+	font-size: 2em;
+	xcolor: #297B94;
+	font-weight: normal; */
+}
+.entry-title a:link, .entry-title a:visited {
+	xcolor: #297B94;
+}
+.entry-avatar {
+	display: none;
+}
