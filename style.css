@@ -1,3 +1,6 @@
+/* @override 
+	http://thesimpli.st/wp-content/themes/thesimplist/style.css */
+
 /*   
 Theme Name: The Simplist
 Theme URI: http://terrychay.com/wordpress-themes/thesimplist
@@ -46,6 +49,9 @@ background: transparent;
 #header #masthead #branding {
 }
 #header #masthead #branding #access {
+}
+#access {
+	display:  none;
 }
 #main {
 }
